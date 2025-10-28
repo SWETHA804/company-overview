@@ -111,6 +111,7 @@ p {
 }
 .btn:hover {
   background-color: #3eb87b;
+  transform: scale(1.05);
 }
 #true-section {
   text-align: center;
@@ -259,4 +260,5 @@ p {
 
 .view-btn:hover {
            background-color:#34a56a;
+           transform: scale(1.05);
 }
