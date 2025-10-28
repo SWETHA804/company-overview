@@ -1,384 +1,266 @@
-  *{
-    box-sizing: border-box;
-    margin: 0;
-}
-#page1{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
 }
 
-#container1{
+body {
+  background: #fff;
+  color:#333;
+}
+
+ .company-overview {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap:60px;
+  padding:60px 8%;
+  background:#fff;
+  border-radius: 12px;
+  box-shadow:0 5px 20px rgba(0,0,0,0.08);
+  margin: 50px auto;
   
-    height: 730px;
-    width: 60%;
-    padding-top: 100px;
-    padding-left: 100px;
-    padding-right: 30px;
-}
-#ourcompanyoverview{
-    font-size: 35px;
 }
 
-#para1{
-    padding-right: 35px;
-    font-size: larger;
+.text-content {
+  flex: 1;
 }
 
-#para2{
-    padding-right: 38px;
-    font-size: larger;
-
-}
-#sec1{
-    margin-top: 20px;
-    height: 60px;
-    display: flex;
-    justify-content: space-evenly;
-    margin-right: 90px;
-}
-#middle1{
-    width: 50%;
-    height:70PX ;
-    display: flex;
-    justify-content: space-evenly;
-    margin-left: -28px;
-}
-#homelogo{
-    height: 53px;
-    width: 53px;
-    margin-left: -50PX;
-    margin-top: 8PX;
-    border-radius:50%;
-   background-color:gray;
-    box-shadow: 0 4px 10px rgb(0,0,0,0.08);
-    
-}
-#highqualitystandards{
-    margin-left: 18px;
-    margin-top: -50px;
-}
-#highqualitystandardsp{
-    margin-left: 18px;
-    margin-right: 60px;
-    
+.image-content {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
 }
 
-#middle2{
-    width: 50%;
-    height:70PX ;
-    margin-left:  -45px;
-    
+.image-content img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
 }
-#healthcare{
-    height: 53px;
-    width: 53px;
-    margin-left: -50PX;
-    margin-top: 8PX;
-    border-radius: 30PX;
-     background-color:paleturquoise;
-    border-radius: 50%;
-    box-shadow: 0 4px 10px rgb(0,0,0,0.08);
-}
-#Products{
-     margin-left: 18px;
-    margin-top: -50px;
-}
-#Comprahensiveportfolio{
-  margin-left: 18px;
-    margin-right: 60px;
+h2 {
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 18px;
 }
 
-#sec2{
-    margin-top: 20px;
-    height: 60px;
-    display: flex;
-    justify-content: space-evenly;
-    margin-right: 90px;
-    margin-right: 470px;
-}
-#globallogo{
-    height: 53px;
-    width: 53px;
-    margin-left: -50PX;
-    margin-top: 8PX;
-    border-radius: 50%;
-     background-color:paleturquoise;
-    box-shadow: 0 4px 10px rgb(0,0,0,0.08);
-}
-#globalpresence{
-     margin-left: 18px;
-    margin-top: -50px;
+p {
+  color: #444;
+  margin-bottom: 10px;
 }
 
-#servingcountries{
-    margin-left: 18px;
-    margin-right: 60px;
+.features {
+  margin: 25px 0;
+  display: flex;
+  flex-wrap:wrap;
+  gap: 16px;
+  justify-content: flex-start;
+}
+.feature {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  width: 48%;
+}
+.features .feature:nth-child(3){
+    width:100%;
 }
 
-#sec3{
-    height: 57px;
-    width: 250px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 8px;
-    margin-top: 35px;
-    background-color: #2ecc71; 
-
-}
-#explorejourney{
-    text-decoration:none;
-    color: white;
+.icon {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-#container2{
-   
-    height: 730px;
-    width: 40%;
+.icon img {
+  width: 28px;
+  height: 28px;
 }
-#firstimg{
-    height: 670px;
-    width: 490px;
-    border-radius: 10px;
-   
-    border: 10px solid whitesmoke;
-    margin-left: 80px;
-    margin-top: 34px;
+.blue {
+  background-color: #e9f5ff;
 }
-#twowhyglobalpartnerstruesus{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.green {
+  background-color: #eaffef;
 }
-#container3{
-    height: 280px;
-    width: 90%;
-    margin-left: 78px;
-    display: flex;
-    justify-content: space-evenly;
+.lightblue {
+  background-color: #f0f7ff;
 }
-#qualityfirstmanufacturing{
-    border: 5px solid white;
-    height: 280px;
-    width: 23%;
-    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
-    border-radius: 16px;
-
+.feature h4 {
+  font-size: 15px;
+  font-weight: 600;
+  color: #222;
 }
-#qualityfirstmanufacturinglogo{
-    height: 80px;
-    width: 80px;
-    margin-top:  20px;
-    margin-left: 39%;
-    border-radius: 13px;
+.feature p {
+  font-size: 13px;
+  color: #666;
 }
-#qualityfirstmanufacturingcontent{
-    margin-left: 50px;
-    margin-top: 15px;
-    padding-bottom: 10px;
+.btn {
+  background-color: #4ecb8c;
+  color: #fff;
+  border: none;
+  padding: 12px 26px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background 0.3s ease;
 }
-.sec1para{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 5px;
+.btn:hover {
+  background-color: #3eb87b;
 }
-#endtoendexportsupport{
-    border: 5px solid white;
-    height: 280px;
-    width: 23%;
-   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
-    border-radius: 16px;
-}
-#endtoendexportsupportlogo{
-    height: 80px;
-    width: 80px;
-    margin-top:  20px;
-    margin-left: 39%;
-    border-radius: 13px;
-}
-#endtoendexportsupportcontent{
-    margin-left: 50px;
-    margin-top: 15px;
-    padding-bottom: 10px;
-}
-.sec2para{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 5px;
-}
-#productdiliverglobally{
-    border: 5px solid white;
-    height: 280px;
-    width: 23%;
-    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
-    border-radius: 16px;
-}
-#productdeliveredgloballylogo{
-
-    height: 90px;
-    width: 90px;
-    margin-top:  20px;
-    margin-left: 38%;
-    border-radius: 13px;
-}
-#productdeliveredgloballycontent{
-    margin-left: 40px;
-    margin-top: 13px;
-    padding-bottom: 5px;
-}
-.sec3para{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 5px;
+#true-section {
+  text-align: center;
+  padding: 60px 8%;
+  margin: 50px auto;
+  margin-top:-30px;
+  max-width: 1200px;
 }
 
-#main3{
-    height: 430px;
-    width: 100%;
-    margin-top: 60px;
-}
-#ourproductscatagories{
-    margin-left: 39%;
-    padding-bottom: 18px;
-}
-.sec4para{
-     display: flex;
-    justify-content: center;
-    align-items: center; 
+#true-section h1 {
+  margin-top: -30px;
+  margin-bottom: 30px;
+  font-size: 28px;
+  font-weight: 600;
+  color:black;
 }
 
-#containerfour{
-    /* border: 2px solid black; */
-    height: 300px;
-    margin-top: 20px;
-    display: flex;
-    align-items: center;
-    margin-left: 38px;
-    margin-right:100px;
+.true-cards-container{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 30px;
+  margin: 0 auto;
+  width: 90%;
+  flex-wrap: nowrap;
+  overflow-x: auto;
 }
 
-#box1{
-   border: 5px solid white;
-    height: 300px;
-    width: 230px;
-    margin-left: 150px;
-    box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
-    border-radius: 10px;
-}
-#antibiotics{
-    height: 150px;
-    width: 230px;
-    margin-left: -5px;
-    margin-top: -4px;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-}
-#antibioticscontent{
-    margin-left: 8px;
-    margin-top: 5px;
-    padding-bottom: 4px;
-}
-.antibioticspara{
-    margin-left: 8px
-}
-.viewproducts{
-   margin-left: 10px;
-   text-decoration: none;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   margin-top: 10px;
-   margin-left: -90px;
-}
-#box2{
-   border: 5px solid white;
-    height: 300px;
-    width: 230px;
-    margin-left: 80px;
-    box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
-     border-radius: 10px;
-}
-#cardiovascular{
-    height: 150px;
-    width: 230px;
-    margin-left: -5px;
-    margin-top: -4px;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-}
-#cardiovascularcontent{
-    margin-left: 8px;
-    margin-top: 5px;
-    padding-bottom: 4px;
-}
-.cardiovascularpara{
-    margin-left: 8px
+.true-cards aside {
+  background-color: #ffffff;
+  border-radius: 12px;
+  width:300;
+  padding: 25px;
+  text-align: center;
+  border:1px solid #f0f0f0;
+  box-shadow: 0 4px 12px rgba(200, 200, 200, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  flex-shrink: 0;
 }
 
-
-#box3{
-   border: 5px solid white;
-    height: 300px;
-    width: 230px;
-    margin-left: 80px;
-    box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
-     border-radius: 10px;
-}
-#antideabetic{
-    height: 150px;
-    width: 230px;
-    margin-left: -5px;
-    margin-top: -4px;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-}
-#antideabeticcontent{
-    margin-left: 8px;
-    margin-top: 5px;
-    padding-bottom: 4px;
-}
-.antideabeticpara{
-margin-left: 8px
-}
-#box4{
-    border: 5px solid white;
-    height: 300px;
-    width: 230px;
-    margin-left: 80px;
-    box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
-     border-radius: 10px;
+.true-cards aside:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 2opx rgba(180, 180, 180, 0.35);
 }
 
-#dermatological{
-    height: 150px;
-    width: 230px;
-    margin-left: -5px;
-    margin-top: -4px;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+.true-cards img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  margin-bottom: 15px;
+  border-radius: 8px;
 }
-#dermatologicalcontent{
-    margin-left: 8px;
-    margin-top: 5px;
-    padding-bottom: 4px;
+
+.true-cards h4 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #1a1a1a;
 }
-.dermatologicalpara{
-    margin-left: 8px
+
+.true-cards p {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.4;
 }
-#viewallcatagories{
-    border: 2px solid blueviolet;
-    height: 50px;
-    width: 160px;
-    text-decoration: none;
-    color: blueviolet;
-    margin-left: 690px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 25px;
-    border-radius: 5px;
+.products-wrapper{
+      background-color: #ffffff;
+     padding: 60px 0;
+     box-shadow: 0 4px 25px rgba(0,0,0,0.3);
+     border-radius: 16px;
+     margin: 50px auto;
+     width: 90%;
+     max-width: 1200px;
+}
+.product-section {
+  text-align: center;
+  padding: 40px 5%;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(230, 230, 230, 0.6);
+  transition: transform 0.03s ease, box-shadow 0.3s ease;
+  margin: 40px auto;
+  max-width: 1000px;
+}
+
+.product-section p {
+  color: #666;
+  font-size: 15px;
+  margin-bottom: 30px;
+}
+
+.product-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.product-card {
+  background:#ffffff;
+  border-radius: 12px;
+  width: 23%;
+  margin-top: 50px;
+  border: 1px solid #f0f0f0;
+  box-shadow: 0 4px 12px rgba(230, 230, 230, 0.6);
+  transition: transform 0.03s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 20px rgba(200, 200, 200, 0.4);
+}
+
+.product-card img {
+  width: 100%;
+  border-radius: 8px;
+  height: 160px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.product-card h4 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.product-card p {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.product-card a {
+  color: #2f80ed;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.view-btn {
+  margin-top: 25px;
+  padding: 12px 26px;
+  border: none;
+  border-radius: 8px;
+  background-color: #3eb87b;
+  color: #fff;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background 0.3s ease;
+}
+
+.view-btn:hover {
+           background-color:#34a56a;
 }
